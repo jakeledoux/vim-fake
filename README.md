@@ -81,18 +81,18 @@ To substitute multiple places with placeholder,
 
 ```xml
 <user>
-	<name>FAKE__male_name__</name>
-	<origin>FAKE__country__</origin>
-	<job>FAKE__job__</job>
+	<name>:male_name:</name>
+	<origin>:country:</origin>
+	<job>:job:</job>
 </user>
 <user>
-	<name>FAKE__male_name__</name>
-	<origin>FAKE__country__</origin>
-	<job>FAKE__job__</job>
+	<name>:male_name:</name>
+	<origin>:country:</origin>
+	<job>:job:</job>
 </user>
 ```
 
-`:FakeSubstitute` command is to substitute each `FAKE__{keyname}__` with
+`:FakeSubstitute` command is to substitute each `:{keyname}:` with
 `fake#gen({keyname})`, respectively.
 
 ```xml

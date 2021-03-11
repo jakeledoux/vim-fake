@@ -19,7 +19,7 @@ autocmd! AutoCmdFake BufHidden * call fake#free_cache()
 function! s:FakeSubstitute(...) range
     let firstline = get(a:000, 0)
     let lastline = get(a:000, 1)
-    let pat = 'FAKE__\([[:alnum:]\/_-]\{-}\)__'
+    let pat = ':\([[:alnum:]\/_-]\{-}\):'
     let sub = '\=fake#has_keyname(submatch(1))?fake#gen(submatch(1)):submatch(0)'
 
     silent execute printf(':%s,%ss/%s/%s/ge', firstline, lastline, pat, sub)
