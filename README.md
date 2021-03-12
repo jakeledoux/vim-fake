@@ -1,9 +1,5 @@
 # Vim-Fake
 
-> :warning: This repo has been modified to make the data more relevant to
-> myself, a 20-something white man from the United States. You're probably
-> better off just using the original repo.
-
 Vim-fake is a vim plugin to provide a generator of random dummy/filler text,
 which is useful to generate a nonsense text like [_Lorem ipsum_](https://en.wikipedia.org/wiki/Lorem_ipsum).
 
